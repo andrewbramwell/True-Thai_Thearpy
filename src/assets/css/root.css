@@ -5,7 +5,7 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #ffba19;
+    --primary: #A17A3A;
     --primaryLight: #ffd675;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
@@ -51,40 +51,32 @@
     text-align: inherit;
   }
   .cs-button-solid {
-    z-index: 1;
-    position: relative;
-    display: inline-block;
-    background-color: var(--primary);
-    width: auto;
-    padding: 0 1.875rem;
+    font-size: 1rem;
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1rem;
+    width: auto;
     line-height: 3.125em;
-    font-weight: bold;
-    color: #000;
-    transition: color 0.3s;
-    transition-delay: 0.1s;
+    height: 3.125rem;
     text-align: center;
+    padding: 0 1.875rem;
+    border-radius: 1.5rem 0 1.5rem 0;
+    position: relative;
+    z-index: 1;
+    background-color: var(--primary);
+    color: #fff;
+    transition: background-color 0.3s, border-radius 0.3s;
   }
   .cs-button-solid:hover {
-    color: #fff;
+    background-color: #A17C3A;
+    border-radius: 0 1.5rem 0 1.5rem;
   }
-  .cs-button-solid:hover:before {
-    width: 100%;
-  }
-  .cs-button-solid:before {
-    z-index: -1;
+  .skip {
     position: absolute;
     top: 0;
     left: 0;
-    content: "";
-    opacity: 1;
-    display: block;
-    background-color: #000;
-    height: 100%;
-    width: 0;
-    transition: width 0.3s;
+    opacity: 0;
+    z-index: -1111111;
   }
   .cs-hide-on-mobile {
     display: none;
@@ -106,7 +98,7 @@
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "josefin sans", Arial, sans-serif;
     font-size: 100%;
     color: var(--bodyTextColor);
   }
@@ -133,6 +125,7 @@
   h6 {
     margin: 0;
     color: var(--headerColor);
+    font-family: kalnia;
   }
   p,
   li,
@@ -156,32 +149,45 @@
     left: 0;
     opacity: 0;
   }
-  /* roboto-regular - latin */
+  /* josefin-sans-regular - latin */
   @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
     font-style: normal;
-    font-family: "Roboto";
     font-weight: 400;
-    font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url('/assets/fonts/josefin-sans-v32-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-  /* roboto-700 - latin */
+  /* josefin-sans-700 - latin */
   @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
     font-style: normal;
-    font-family: "Roboto";
     font-weight: 700;
-    font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url('/assets/fonts/josefin-sans-v32-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-  /* roboto-900 - latin */
+  /* kalnia-regular - latin */
   @font-face {
-    font-style: normal;
-    font-family: "Roboto";
-    font-weight: 900;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kalnia';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/kalnia-v2-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* kalnia-500 - latin */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kalnia';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/kalnia-v2-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 }
 /* Reset Margins */
@@ -377,6 +383,7 @@
     left: auto;
     right: 0;
     opacity: 0;
+    visibility: hidden;
     transform: scaleX(0);
     background-color: #fff;
     height: 100vh;
@@ -443,6 +450,9 @@
     text-decoration: none;
     /* 16px - 24px */
     font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-family: Josefin sans;
+    text-transform: uppercase;
+    font-weight: 600;
     line-height: 1.2em;
     color: var(--headerColor);
   }
@@ -482,6 +492,7 @@
   }
   #cs-navigation.cs-active .cs-ul-wrapper {
     opacity: 1;
+    visibility: visible;
     transform: scaleX(1);
     transition-delay: 0.2s;
   }
@@ -541,7 +552,7 @@
     border: none;
     background-color: transparent;
     font-family: inherit;
-    font-size: inherit;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     cursor: pointer;
     appearance: none;
   }
@@ -789,6 +800,9 @@
     display: block;
     margin: 0;
     text-decoration: none;
+    font-family: Josefin sans;
+    text-transform: uppercase;
+    font-weight: 600;
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1vw, 1rem);
     line-height: 1.5em;
@@ -831,205 +845,177 @@
   }
 }
 /*-- -------------------------- -->
-<---   Interior Page Header     -->
+<---          Banner            -->
 <--- -------------------------- -*/
-/* Mobile */
+/* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #int-hero {
-    z-index: 1;
+  #banner-843 {
+    /* 175px - 260px top */
+    padding: clamp(10.9375rem, 20vw, 16.25rem) 1rem clamp(6.25rem, 14vw, 12vw);
+    /* clips svg wave from causing overflow issues */
+    overflow: hidden;
     position: relative;
+    z-index: 1;
+  }
+  #banner-843 .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    min-height: 30vh;
-    padding-top: 3.125rem;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
   }
-  #int-hero picture {
-    z-index: -2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  #int-hero picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  #int-hero h1 {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 4.375rem;
-    margin-bottom: 1.875rem;
-    max-width: 31.25rem;
-    width: 96%;
-    font-size: 2.13333333rem;
-    color: #fff;
-    text-align: center;
-  }
-  #int-hero p {
-    display: block;
-    margin: auto;
-    margin-bottom: 1.875rem;
-    max-width: 25rem;
-    width: 96%;
-    color: #fff;
-    text-align: center;
-  }
-  #int-hero:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0.7;
-    display: block;
-    background: #000;
-    height: 100%;
-    width: 100%;
-  }
-}
-/* Tablet */
-@media only screen and (min-width: 48rem) {
-  #int-hero {
-    font-size: 100%;
-  }
-  #int-hero h1 {
-    font-size: 4rem;
-  }
-}
-/* Small Desktop */
-@media only screen and (min-width: 64rem) {
-  #int-hero {
-    background-attachment: fixed;
-    min-height: 18.75rem;
-    height: auto;
-    padding-top: 11.25rem;
-    font-size: inherit;
-    padding-block-end: 6.25rem;
-  }
-}
-/*-- -------------------------- -->
-<---    Final Call To Action    -->
-<--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0rem) {
-  #cta {
-    position: relative;
-    padding: 3.125rem 0;
-  }
-  #cta .container {
-    text-align: center;
-  }
-  #cta picture {
-    z-index: -2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  #cta picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  #cta .title {
-    position: relative;
-    margin-bottom: 2.25rem;
-    font-size: min(9vw, 3rem);
-    line-height: 1.20833333em;
+  #banner-843 .cs-int-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
     font-weight: 900;
-    color: #fff;
-    text-align: center;
-  }
-  #cta p {
-    opacity: 1;
-    margin: auto;
-    margin-bottom: 2.25rem;
-    max-width: 37.375rem;
-    width: 96%;
-    color: #fff;
-    text-align: center;
-  }
-  #cta:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0.7;
-    display: block;
-    background: #000;
-    height: 100%;
-    width: 100%;
-  }
-}
-/* Small Desktop */
-@media only screen and (min-width: 64rem) {
-  #cta {
-    padding: 10.5rem 0;
-  }
-}
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-  #cta {
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
     position: relative;
-    margin-top: 6.25rem;
   }
-  #cta .container {
-    margin: auto;
-    width: 90.0625%;
-  }
-  #cta picture {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90.0625%;
-  }
-  #cta picture:before {
-    z-index: 1;
+  #banner-843 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
+  }
+  #banner-843 .cs-background:before {
+    /* background color overlay */
     content: "";
-    opacity: 0.7;
+    position: absolute;
     display: block;
-    background: #000;
     height: 100%;
     width: 100%;
+    background: #1a1a1a;
+    opacity: 0.64;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
-  #cta:before {
-    display: none;
-  }
-  #cta:after {
-    z-index: -3;
+  #banner-843 .cs-background img {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    content: "";
-    opacity: 1;
-    transform: translateX(-50%);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+  #banner-843 .cs-wave {
+    /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
+    width: 48rem;
+    height: auto;
     display: block;
-    background: url("/assets/svgs/cta-squares.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 69.25rem;
-    width: 125rem;
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #banner-843 .cs-wave {
+    width: 100%;
+    left: 0;
+    transform: none;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #cta:after {
-    display: none;
+  body.dark-mode #banner-843 .cs-wave path {
+    fill: var(--dark);
+  }
+}
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-697 {
+    padding: var(--sectionPadding);
+    background-color: var(--primary);
+    position: relative;
+    z-index: 1;
+  }
+  #cta-697 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #cta-697 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #cta-697 .cs-title {
+    color: var(--bodyTextColorWhite);
+  }
+  #cta-697 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+    line-height: 3.125em;
+    height: 3.125rem;
+    text-align: center;
+    padding: 0 1.875rem;
+    border-radius: 1.5rem 0 1.5rem 0;
+    position: relative;
+    z-index: 1;
+    background-color: #442C1F;
+    color: #fff;
+    transition: background-color 0.3s, border-radius 0.3s;
+  }
+  #cta-697 .cs-button-solid:hover {
+    background-color: #442C1F;
+    border-radius: 0 1.5rem 0 1.5rem;
+  }
+  #cta-697 .skip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1111111;
+  }
+  #cta-697 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* makes it act like a background image */
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #cta-697 .cs-content {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 /*-- -------------------------- -->
@@ -1038,7 +1024,7 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   #footer {
-    background: #1c1c1c;
+    background: #442C1F;
     padding: 5.25rem 0 calc(20 / 16 * 1rem);
     font-size: min(4vw, 1.2em);
   }
