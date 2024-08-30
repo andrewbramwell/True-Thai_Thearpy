@@ -8,10 +8,10 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary: #A17A3A;
-        --primaryLight: #ffd675;
-        --secondary: #001f3f;
-        --secondaryLight: #001f3f;
+        --primary: #8C201E;
+        --primaryLight: #8C201E;
+        --secondary: #A17B3A;
+        --secondaryLight: #A17B3A;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
@@ -79,7 +79,7 @@
 		transition: background-color 0.3s, border-radius 0.3s;
 	  }
 	  .cs-button-solid:hover {
-		background-color: #A17C3A;
+		background-color: var(--primary);
 		border-radius: 0 1.5rem 0 1.5rem;
 	  }
 	  .skip {
@@ -144,7 +144,7 @@
     h6 {
         margin: 0;
         color: var(--headerColor);
-        font-family: kalnia;
+        font-family: josefin sans;
     }
 
     p,
@@ -1111,7 +1111,7 @@
 @media only screen and (min-width: 0rem) {
     #cta-697 {
         padding: var(--sectionPadding);
-        background-color: var(--primary);
+        background-color: var(--secondary);
         position: relative;
         z-index: 1;
 
@@ -1203,7 +1203,7 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
     #footer {
-        background: #442C1F;
+        background: #1a1a1a;
         padding: (84/16rem) 0 calc(20 / 16 * 1rem);
         font-size: ~"min(4vw, 1.2em)";
 
