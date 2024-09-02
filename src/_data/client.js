@@ -1,20 +1,20 @@
 module.exports = {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "name": "True Thai Therapy",
+    "email": "hello@truethaiedinburgh.co.uk",
+    "phoneForTel": "+447444831603",
+    "phoneFormatted": "07444 831603",
+    "onlineBooking": "https://truethaitherapyedinburgh.setmore.com/",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "lineOne": "55 Causewayside",
+        "lineTwo": "Newington",
+        "city": "Edinburgh",
+        "zip": "EH9 1QF",
+        "mapLink": "https://maps.app.goo.gl/PYDPPZzAemS3Etmq8"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",
         "instagram": "https://www.instagram.com/",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.example.com"
+    "domain": "https://www.truethaiedinburgh.co.uk"
 };

@@ -1,12 +1,12 @@
 ---
-title: 'Gallery | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'Gallery | True Thai Therapy'
+description: 'Step into the serene world of True Thai Therapy through our gallery. View our tranquil spaces and get a glimpse of the relaxing experience that awaits you in Edinburgh.'
+preloadImg: '/assets/images/banners/banner3.webp'
 permalink: 'gallery/'
 eleventyNavigation:
     key: Gallery
-    order: 2300
-    parent: About
+    order: 400
+
 ---
 
 {% extends "layouts/base.html" %}
@@ -16,21 +16,26 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
+
 <!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<div id="banner-843">
+<div id="banner-1400">
     <div class="cs-container">
-        <span class="cs-int-title">Interior Page</span>
+        <span class="cs-int-title">Gallery</span>
+        <div class="cs-breadcrumbs">
+            <a href="" class="cs-link">Home</a>
+            <a href="/gallery/" class="cs-link cs-active">Gallery</a>
+        </div>
     </div>
     <!--Background Image-->
-    <picture class="cs-background" aria-hidden="true">
+    <picture class="cs-background">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga-m.jpg">
+        <source media="(max-width: 600px)" srcset="/assets/images/banners/banner3-m.webp">
         <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg" alt="yoga" width="1280" height="568">
+        <source media="(min-width: 601px)" srcset="/assets/images/banners/banner3.webp">
+        <img decoding="async" src="/assets/images/banners/banner3.jpg" alt="candles and oils" width="1280" height="568" aria-hidden="true">
     </picture>
 </div>
                                 
@@ -42,10 +47,10 @@ eleventyNavigation:
 <section id="gallery-378">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Some Work from Our Memorable Gallery</h2>
+            <span class="cs-topper">Gallery</span>
+            <h2 class="cs-title">Our Thai Oasis in Edinburgh</h2>
             <p class="cs-text">
-                At Stitch Cleaning Service, let us help you solve problems so that you can focus on your mission. We support businesses through periods of expansion, succession.
+                From our inviting reception to our peaceful treatment rooms, each space is designed to transport you to the heart of Thailand. Experience the calm that awaits you at True Thai Therapy.
             </p>
         </div>
         <div class="cs-gallery">
@@ -96,30 +101,6 @@ eleventyNavigation:
                 <source media="(max-width: 600px)" srcset="/assets/images/gallery/gal1-m.webp">
                 <source media="(min-width: 601px)" srcset="/assets/images/gallery/gal1.webp">
                 <img loading="lazy" decoding="async" src="/assets/images/gallery/gal1.jpg" alt="thai massage" width="305" height="400">
-            </picture>
-             <!--Picture 5-->
-             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg" alt="gallery" width="305" height="400">
-            </picture>
-            <!--Picture 6-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg" alt="gallery" width="305" height="400">
-            </picture>
-            <!--Picture 7-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery7.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery7.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery7.jpg" alt="gallery" width="305" height="400">
-            </picture>
-            <!--Picture 8-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery8.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery8.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery8.jpg" alt="gallery" width="305" height="400">
             </picture>
         </div>
     </div>

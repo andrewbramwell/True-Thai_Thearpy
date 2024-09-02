@@ -37,7 +37,6 @@
     gap: clamp(1rem, 1.5vw, 1.25rem);
   }
   #gallery-378 .cs-image {
-    border-radius: 1.25rem;
     width: 46%;
     /* 150px - 300px */
     height: clamp(9.375rem, 39vw, 18.75rem);

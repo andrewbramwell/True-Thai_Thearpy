@@ -46,7 +46,6 @@
     list-style: none;
     width: 100%;
     max-width: 31.25rem;
-    border-radius: 1rem;
     background-color: #fff;
     overflow: hidden;
     grid-column: span 3;
@@ -62,15 +61,14 @@
     transform: scale(1.1);
   }
   #services-877 .cs-item:hover .cs-h3 {
-    color: var(--primary);
+    color: var(--secondary);
   }
   #services-877 .cs-item:before {
     /* border, done in pseudo so it can sit under the picture */
     content: "";
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
     /* prevents border from affecting height and width */
     box-sizing: border-box;
     background: transparent;
@@ -90,7 +88,7 @@
     width: 100%;
     height: 12.5rem;
     margin-bottom: 1.25rem;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     /* clips the img tag corners */
     overflow: hidden;
     display: block;

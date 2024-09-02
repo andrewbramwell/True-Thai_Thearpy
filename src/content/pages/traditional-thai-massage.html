@@ -1,0 +1,76 @@
+---
+title: 'Traditional Thai Body Massage | True Thai Therapy'
+description: "Discover the ancient art of Thai massage at True Thai Therapy. Experience this unique blend of stretching and pressure point therapy to balance your body's energy."
+preloadImg: '/assets/images/banners/banner3.webp'
+permalink: 'traditional-thai-massage/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/internal.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1400">
+    <div class="cs-container">
+        <span class="cs-int-title">Gallery</span>
+        <div class="cs-breadcrumbs">
+            <a href="" class="cs-link">Home</a>
+            <a href="/gallery/" class="cs-link cs-active">Gallery</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/banners/banner3-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/banners/banner3.webp">
+        <img decoding="async" src="/assets/images/banners/banner3.jpg" alt="candles and oils" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/side/thai-massage-m.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/side/thai-massage-m.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/side/thai-massage.jpg" alt="thai massage" width="542" height="728">
+                </picture>
+            </div>
+        </div>
+            <div class="cs-content">
+                <h1 class="cs-title"><span class="cs-color">Traditional Thai Body Massage</span> in Edinburgh</h1>
+                <p>Experience the ancient healing art of Traditional Thai Body Massage, known as "Nuad Phaen Bhoran" in Thai, at True Thai Therapy in Edinburgh. Often called "lazy man's yoga," this unique form of bodywork combines assisted stretching and pressure point therapy to balance your body's energy systems and promote overall wellness.</p>
+                <p>During your Thai massage session, our expert therapists will guide your body through a series of yoga-like stretches while applying precise pressure along the Sen (energy) lines. This technique aims to clear energy blockages and stimulate the flow of vital energy throughout your body. Unlike Western massage styles, Thai massage is performed on a comfortable mat, and you'll remain fully clothed in loose-fitting attire we provide.</p>
+                <p>This invigorating yet deeply relaxing treatment is performed without oils, allowing our therapists to use their hands, thumbs, elbows, and even feet to apply the perfect amount of pressure. Through fluid movements and gentle manipulations, tension is released, promoting flexibility, joint mobility, and a profound sense of relaxation.</p>
+                <h3>Benefits of Traditional Thai Body Massage</h3>
+                <ul>
+                    <li><strong>Muscle Tension Relief:</strong> Our skilled therapists target and release muscle tension, alleviating stiffness and knots to improve overall flexibility and comfort.</li>
+                    <li><strong>Enhanced Energy Flow:</strong> By working along the Sen lines, Thai massage helps to clear energy blockages, promoting a balanced and free-flowing energy system throughout your body.</li>
+                    <li><strong>Improved Flexibility:</strong> The assisted stretches incorporated in Thai massage gradually increase flexibility and enhance your overall range of motion.</li>
+                    <li><strong>Stress Reduction:</strong> Experience a profound sense of relaxation as the combination of stretching and pressure point therapy helps to melt away stress and promote mental calmness.</li>
+                    <li><strong>Increased Vitality:</strong> By balancing your body's energy pathways, Thai massage revitalizes your system, boosting energy levels and promoting a sense of overall well-being.</li>
+                </ul>
+                <p>At True Thai Therapy, we invite you to experience the transformative power of Traditional Thai Body Massage. Let our expert therapists guide you through this ancient practice, helping you achieve balance, relaxation, and renewed vitality in the heart of Edinburgh.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'components/cta.html' %}
+
+{% endblock %}

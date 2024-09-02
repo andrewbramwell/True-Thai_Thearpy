@@ -1,10 +1,10 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'Contact | True Thai Therapy'
+description: 'Ready to experience true Thai relaxation? Contact True Thai Therapy in Edinburgh to book your appointment or learn more about our range of authentic massage services.'
+preloadImg: '/assets/images/banners/banner3.webp'
 permalink: 'contact/'
 eleventyNavigation:
-    key: Contact Us
+    key: Contact
     order: 500
 ---
 
@@ -16,21 +16,25 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
+<!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<div id="banner-843">
+<div id="banner-1400">
     <div class="cs-container">
-        <span class="cs-int-title">Interior Page</span>
+        <span class="cs-int-title">Contact Us</span>
+        <div class="cs-breadcrumbs">
+            <a href="" class="cs-link">Home</a>
+            <a href="/contact/" class="cs-link cs-active">Contact</a>
+        </div>
     </div>
     <!--Background Image-->
-    <picture class="cs-background" aria-hidden="true">
+    <picture class="cs-background">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga-m.jpg">
+        <source media="(max-width: 600px)" srcset="/assets/images/banners/banner3-m.webp">
         <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg" alt="yoga" width="1280" height="568">
+        <source media="(min-width: 601px)" srcset="/assets/images/banners/banner3.webp">
+        <img decoding="async" src="/assets/images/banners/banner3.jpg" alt="candles and oils" width="1280" height="568" aria-hidden="true">
     </picture>
 </div>
 
@@ -42,38 +46,37 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Get in Touch</h2>
+            <h2 class="cs-title">Reach Out for Relaxation</h2>
             <p class="cs-text">
-                We are a team of passionate and creative individuals dedicated to crafting captivating designs that leave a lasting impression.
+                At True Thai Therapy, we're here to guide you on your journey to wellness. Whether you have questions about our services or want to book your Thai massage experience, our friendly team is ready to assist.
             </p>
             <ul class="cs-ul">
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                        <img aria-hidden="true" src="/assets/svgs/phone.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Phone</span>
-                        <a href="tel:888-4565-789
-                        " class="cs-link">+1 (888) 4565 789
+                        <a href="{{client.phoneForTel}} " class="cs-link">{{client.phoneFormatted}}
                         </a>
                     </div>
                 </li>
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                        <img aria-hidden="true" src="/assets/svgs/mail.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Email</span>
-                        <a href="mailto:Email@stitch.com" class="cs-link">Email@stitch.com</a>
+                        <a href="mailto:{{client.email}}" class="cs-link">{{client.email}} </a>
                     </div>
                 </li>
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                        <img aria-hidden="true" src="/assets/svgs/pin.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Address</span>
-                        <a href="" class="cs-link">2553 Woodbridge Lane, Boston Ware 120</a>
+                        <a href="" class="cs-link">{{client.address.lineOne}}, {{client.address.lineTwo}}, {{client.address.city}} {{client.address.zip}} </a>
                     </div>
                 </li>
             </ul>

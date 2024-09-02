@@ -1,12 +1,11 @@
 ---
-title: 'Our Team | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'Our Team | True Thai Therapy'
+description: 'Meet our skilled therapists at True Thai Therapy. Our diverse team brings expertise in traditional Thai techniques and modern wellness practices to Edinburgh.'
+preloadImg: '/assets/images/banners/banner3.webp'
 permalink: 'our-team/'
 eleventyNavigation:
-    key: Our Team
-    order: 2200
-    parent: About
+    key: Team
+    order: 300
 ---
 
 {% extends "layouts/base.html" %}
@@ -17,272 +16,202 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
-
-    <div id="banner-843">
-        <div class="cs-container">
-            <span class="cs-int-title">Our Team</span>
-        </div>
-        <!--Background Image-->
-        <picture class="cs-background" aria-hidden="true">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga-m.jpg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg" alt="yoga" width="1280" height="568">
-        </picture>
-    </div>
-
-    <!-- ============================================ -->
-<!--                  Content                     -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
 <!-- ============================================ -->
 
-<section id="content-1450">
+<div id="banner-1400">
     <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">ABOUT US</span>
-            <h2 class="cs-title">What Our Valued Clients Say About Us</h2>
-            <p class="cs-text">
-                At True Thai Therapy, we take pride in connecting with each of our clients. Our reputation for excellence spans both our local Edinburgh community and visitors from around the world. Here's what some of our satisfied guests have shared about their experiences with us
-            </p>
+        <span class="cs-int-title">Our Team</span>
+        <div class="cs-breadcrumbs">
+            <a href="" class="cs-link">Home</a>
+            <a href="/our-team/" class="cs-link cs-active">Our Team</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/banners/banner3-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/banners/banner3.webp">
+        <img decoding="async" src="/assets/images/banners/banner3.jpg" alt="candles and oils" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="about-1451">
+    <div class="cs-container">
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/team/nuch-m.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/team/nuch.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/team/nuch.jpg" alt="nuch owner" width="522" height="696">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-header">Nuch</span>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo in tenetur eveniet iste voluptates vel, molestiae id ab nisi, nihil ipsam voluptas, sapiente doloribus facere earum vitae provident! Aperiam modi cupiditate facere eos consectetur illo necessitatibus. Deleniti corrupti molestias mollitia ipsam eius, vel dolorum quaerat totam recusandae eum voluptas quisquam harum accusantium blanditiis, reprehenderit, a aperiam nihil. Doloremque eius placeat alias excepturi esse cupiditate? Illum iure reprehenderit expedita, incidunt optio non quae harum molestiae quas sit. Dicta, ullam tempo
+                </p>
+                <br>
+                <ul id="list-893" class="cs-ul">
+                    <li class="cs-li">
+                        Traditional Thai Body Massage
+                    </li>
+                    <li class="cs-li">
+                        Head, Back and Shoulders Massage
+                    </li>
+                    <li class="cs-li">
+                        Deep Tissue Oil Massage
+                    </li>
+                    <li class="cs-li">
+                        Deep Tissue Hot Oil Massage
+                    </li>
+                    <li class="cs-li">
+                        Pregnancy Massage
+                    </li>
+                    <li class="cs-li">
+                        Reflexology Foot Massage
+                    </li>
+                    <li class="cs-li">
+                        Hot Stone Massage
+                    </li>
+                </ul>       
+                <!--Floating Graphic-->
+                <img class="cs-floater" loading="lazy" decoding="async" src="/assets/svgs/seeds.svg" alt="person" width="193" height="197">
+            </div>
+        </div>
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/team/zoe-m.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/team/zoe.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/team/zoe.jpg" alt="zoe therapist" width="522" height="696">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-header">Zoé</span>
+                <p class="cs-text">
+                    Hailing from France, Zoé brings a unique blend of Eastern and Western massage techniques to True Thai Therapy. With six years of experience and a recent transition to full-time therapy, she combines her training from the prestigious Wat Po in Chiang Mai, Thailand and the Scottish Massage School in Edinburgh to offer a comprehensive approach to wellness. Zoé specializes in deep tissue work and traditional Thai massage, her expertise reflecting her dedication to the craft. Her diverse skill set and commitment to holistic care make her an invaluable member of our team.
+                </p>
+                <br>
+                <ul id="list-893" class="cs-ul">
+                    <li class="cs-li">
+                        Traditional Thai Body Massage
+                    </li>
+                    <li class="cs-li">
+                        Head, Back and Shoulders Massage
+                    </li>
+                    <li class="cs-li">
+                        Deep Tissue Oil Massage
+                    </li>
+                    <li class="cs-li">
+                        Deep Tissue Hot Oil Massage
+                    </li>
+                    <li class="cs-li">
+                        Pregnancy Massage
+                    </li>
+                    <li class="cs-li">
+                        Reflexology Foot Massage
+                    </li>
+                    <li class="cs-li">
+                        Hot Stone Massage
+                    </li>
+                </ul>
+                <!--Floating Graphic-->
+                <img class="cs-floater" loading="lazy" decoding="async" src="/assets/svgs/seeds.svg" alt="person" width="193" height="197">
+            </div>
+        </div>
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/team/yut-m.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/team/yut.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/team/yut.jpg" alt="tanayut therapist" width="522" height="696">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-header">Tanayut</span>
+                <p class="cs-text">
+                    Hailing from Chiang Mai in northern Thailand, Tanayut brings over three decades of massage expertise to True Thai Therapy. With 27 years of experience in Thailand, followed by stints in London and Edinburgh, he offers a wealth of knowledge in traditional Thai techniques. Trained at Trang Polytechnic College and the Old Traditions Thai Massage School, Tanayut specializes in Thai massage, acupressure, hot stones, tok sen, deep tissue oil, and foot massage. His extensive background ensures a truly authentic and effective treatment experience.
+                </p>
+                <br>
+                <ul id="list-893" class="cs-ul">
+                    <li class="cs-li">
+                        Traditional Thai Body Massage
+                    </li>
+                    <li class="cs-li">
+                        Head, Back and Shoulders Massage
+                    </li>
+                    <li class="cs-li">
+                        Deep Tissue Oil Massage
+                    </li>
+                    <li class="cs-li">
+                        Deep Tissue Hot Oil Massage
+                    </li>
+                    <li class="cs-li">
+                        Pregnancy Massage
+                    </li>
+                    <li class="cs-li">
+                        Reflexology Foot Massage
+                    </li>
+                    <li class="cs-li">
+                        Hot Stone Massage
+                    </li>
+                </ul>  
+                <!--Floating Graphic-->
+                <img class="cs-floater" loading="lazy" decoding="async" src="/assets/svgs/seeds.svg" alt="person" width="193" height="197">
+            </div>
+        </div>
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/team/minta-m.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/team/minta.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/team/minta.jpg" alt="minta therapist" width="522" height="696">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-header">Mint</span>
+                <p class="cs-text">
+                    Originally from Bangkok, Thailand, Mint brings a unique specialization in Toksen Therapy to True Thai Therapy. With 12 years of dedicated experience in this traditional healing art, Mint offers a rare expertise to our clients. Holding a law degree alongside her Diploma in Toksen from the prestigious Khitchakut Center in Chantaburi, Mint combines academic rigor with hands-on skill. Her focus on treating sports injuries through Toksen techniques provides a distinctive approach to healing and recovery.
+                </p>
+                <br>
+                <ul id="list-893" class="cs-ul">
+                    <li class="cs-li">
+                        Traditional Thai Body Massage
+                    </li>
+                    <li class="cs-li">
+                        Head, Back and Shoulders Massage
+                    </li>
+                    <li class="cs-li">
+                        Deep Tissue Oil Massage
+                    </li>
+                    <li class="cs-li">
+                        Deep Tissue Hot Oil Massage
+                    </li>
+                    <li class="cs-li">
+                        Pregnancy Massage
+                    </li>
+                    <li class="cs-li">
+                        Reflexology Foot Massage
+                    </li>
+                    <li class="cs-li">
+                        Hot Stone Massage
+                    </li>
+                </ul>    
+                <!--Floating Graphic-->
+                <img class="cs-floater" loading="lazy" decoding="async" src="/assets/svgs/seeds.svg" alt="person" width="193" height="197">
+            </div>
         </div>
     </div>
 </section>
                                 
-
-<!-- ============================================ -->
-<!--                 Side By Side                 -->
-<!-- ============================================ -->
-
-<section id="RPsbs-873">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="/assets/images/staff/nuch-m.webp">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="/assets/images/staff/nuch.webp">
-            <img loading="lazy" decoding="async" src="/assets/images/staff/nuch.jpg" alt="nuch owner" width="630" height="775">
-        </picture>
-        <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Occupational and Speech Therapy</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta officiis praesentium necessitatibus tempora unde quasi porro nemo aliquam voluptatem quaerat hic, doloremque impedit perferendis labore, ea libero voluptas laudantium? 
-            </p>
-            <p class="cs-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <ul id="list-893" class="cs-ul">
-                <li class="cs-li">
-                    Parkinson’s
-                </li>
-                <li class="cs-li">
-                    MS
-                </li>
-                <li class="cs-li">
-                    Stroke
-                </li>
-                <li class="cs-li">
-                    SCI
-                </li>
-                <li class="cs-li">
-                    Vestibular
-                </li>
-                <li class="cs-li">
-                    Balance/Gait disorders
-                </li>
-                <li class="cs-li">
-                    Carpal Tunnel
-                </li>
-                <li class="cs-li">
-                    Back Pain
-                </li>
-                <li class="cs-li">
-                    Hip/Knee Pain
-                </li>
-                <li class="cs-li">
-                    Shoulder Pain
-                </li>
-            </ul>                   
-        </div>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!--             Side By Side Reverse             -->
-<!-- ============================================ -->
-
-<section id="RPsbsr-873">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="/assets/images/staff/tanayut-m.webp">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="/assets/images/staff/tanayut.webp">
-            <img loading="lazy" decoding="async" src="/assets/images/staff/tanayut.jpg" alt="tanayut therapist" width="630" height="775">
-        </picture>
-        <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Occupational and Speech Therapy</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta officiis praesentium necessitatibus tempora unde quasi porro nemo aliquam voluptatem quaerat hic, doloremque impedit perferendis labore, ea libero voluptas laudantium? 
-            </p>
-            <p class="cs-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <ul id="list-893" class="cs-ul">
-                <li class="cs-li">
-                    Parkinson’s
-                </li>
-                <li class="cs-li">
-                    MS
-                </li>
-                <li class="cs-li">
-                    Stroke
-                </li>
-                <li class="cs-li">
-                    SCI
-                </li>
-                <li class="cs-li">
-                    Vestibular
-                </li>
-                <li class="cs-li">
-                    Balance/Gait disorders
-                </li>
-                <li class="cs-li">
-                    Carpal Tunnel
-                </li>
-                <li class="cs-li">
-                    Back Pain
-                </li>
-                <li class="cs-li">
-                    Hip/Knee Pain
-                </li>
-                <li class="cs-li">
-                    Shoulder Pain
-                </li>
-            </ul>                   
-        </div>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!--                 Side By Side                 -->
-<!-- ============================================ -->
-
-<section id="RPsbs-873">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="/assets/images/staff/zoe-m.webp">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="/assets/images/staff/zoe.webp">
-            <img loading="lazy" decoding="async" src="/assets/images/staff/zoe.jpg" alt="zoe therapist" width="630" height="775">
-        </picture>
-        <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Occupational and Speech Therapy</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta officiis praesentium necessitatibus tempora unde quasi porro nemo aliquam voluptatem quaerat hic, doloremque impedit perferendis labore, ea libero voluptas laudantium? 
-            </p>
-            <p class="cs-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <ul id="list-893" class="cs-ul">
-                <li class="cs-li">
-                    Parkinson’s
-                </li>
-                <li class="cs-li">
-                    MS
-                </li>
-                <li class="cs-li">
-                    Stroke
-                </li>
-                <li class="cs-li">
-                    SCI
-                </li>
-                <li class="cs-li">
-                    Vestibular
-                </li>
-                <li class="cs-li">
-                    Balance/Gait disorders
-                </li>
-                <li class="cs-li">
-                    Carpal Tunnel
-                </li>
-                <li class="cs-li">
-                    Back Pain
-                </li>
-                <li class="cs-li">
-                    Hip/Knee Pain
-                </li>
-                <li class="cs-li">
-                    Shoulder Pain
-                </li>
-            </ul>                   
-        </div>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!--             Side By Side Reverse             -->
-<!-- ============================================ -->
-
-<section id="RPsbsr-873">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="/assets/images/staff/minta-m.webp">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="/assets/images/staff/minta.webp">
-            <img loading="lazy" decoding="async" src="/assets/images/staff/minta.jpg" alt="minta therapist" width="630" height="775">
-        </picture>
-        <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Occupational and Speech Therapy</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta officiis praesentium necessitatibus tempora unde quasi porro nemo aliquam voluptatem quaerat hic, doloremque impedit perferendis labore, ea libero voluptas laudantium? 
-            </p>
-            <p class="cs-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <ul id="list-893" class="cs-ul">
-                <li class="cs-li">
-                    Parkinson’s
-                </li>
-                <li class="cs-li">
-                    MS
-                </li>
-                <li class="cs-li">
-                    Stroke
-                </li>
-                <li class="cs-li">
-                    SCI
-                </li>
-                <li class="cs-li">
-                    Vestibular
-                </li>
-                <li class="cs-li">
-                    Balance/Gait disorders
-                </li>
-                <li class="cs-li">
-                    Carpal Tunnel
-                </li>
-                <li class="cs-li">
-                    Back Pain
-                </li>
-                <li class="cs-li">
-                    Hip/Knee Pain
-                </li>
-                <li class="cs-li">
-                    Shoulder Pain
-                </li>
-            </ul>                   
-        </div>
-    </div>
-</section>
                                 
                                 
 
