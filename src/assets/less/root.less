@@ -8,8 +8,8 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary: #8C201E;
-        --primaryLight: #8C201E;
+        --primary: #ad1210;
+        --primaryLight: #ad1210;
         --secondary: #C4AB69;
         --secondaryLight: #C4AB69;
         --headerColor: #1a1a1a;
@@ -152,7 +152,8 @@
     h6 {
         margin: 0;
         color: var(--headerColor);
-        font-family: josefin sans;
+        font-family: Libre Baskerville;
+        
     }
 
     p,
@@ -200,21 +201,21 @@
         font-weight: 700;
         src: url('/assets/fonts/josefin-sans-v32-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
-    /* kalnia-regular - latin */
+    /* libre-baskerville-regular - latin */
     @font-face {
         font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'Kalnia';
+        font-family: 'Libre Baskerville';
         font-style: normal;
         font-weight: 400;
-        src: url('/assets/fonts/kalnia-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        src: url('/assets/fonts/libre-baskerville-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
-    /* kalnia-500 - latin */
+    /* libre-baskerville-700 - latin */
     @font-face {
         font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'Kalnia';
+        font-family: 'Libre Baskerville';
         font-style: normal;
-        font-weight: 500;
-        src: url('/assets/fonts/kalnia-v2-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        font-weight: 700;
+        src: url('/assets/fonts/libre-baskerville-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
     
 }
@@ -382,7 +383,7 @@ html {
             content: "";
             width: 0%;
             height: 100%;
-            background: #1a1a1a;
+            background: var(--primary);
             opacity: 0.8;
             position: absolute;
             display: block;
@@ -445,7 +446,7 @@ html {
             width: (56/16rem);
             height: (56/16rem);
             margin: 0 0 0 auto;
-            background-color: #484848;
+            background-color: var(--secondary);
             border: none;
             display: flex;
             justify-content: center;
@@ -609,7 +610,6 @@ html {
         .cs-li-link {
             /* 16px - 24px */
             font-size: clamp(1rem, 2.5vw, 1.5rem);
-            text-transform: uppercase;
             font-weight: 700;
             line-height: 1.2em;
             text-decoration: none;
@@ -745,7 +745,6 @@ html {
             font-size: clamp(0.875rem, 0.6vw, 1rem);
             line-height: 1.5em;
             text-decoration: none;
-            text-transform: uppercase;
             font-weight: 700;
             margin: 0;
             color: var(--bodyTextColorWhite);
@@ -869,7 +868,7 @@ html {
             margin: 0;
             color: var(--bodyTextColorWhite);
             position: relative;
-            font-family: "Arizonia", Arial, serif;
+            font-family: "Libre Baskerville", Arial, serif;
         }
 
         .cs-breadcrumbs {
@@ -910,7 +909,7 @@ html {
             }
 
             &.cs-active {
-                color: var(--primary);
+                color: var(--secondary);
             }
         }
 
@@ -1008,11 +1007,6 @@ html {
         }
     }
 }
-
-
-
-
-
 
 /*-- -------------------------- -->
 <---            CTA             -->
@@ -1166,7 +1160,7 @@ html {
                 background-color 0.3s;
 
             &:hover {
-                background-color: var(--primaryLight);
+                background-color: var(--secondary);
                 transform: translateY(-0.1875rem);
 
                 .cs-social-img {
@@ -1228,7 +1222,7 @@ html {
             transition: color 0.3s;
 
             &:hover {
-                color: var(--primaryLight);
+                color: var(--secondary);
             }
         }
 
@@ -1246,7 +1240,7 @@ html {
             /* 48px - 64px */
             margin: clamp(3rem, 7vw, 4rem) auto 0;
             padding-top: (24/16rem);
-            border-top: 1px solid #484848;
+            border-top: 1px solid #bababa;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -1279,12 +1273,12 @@ html {
             text-decoration: none;
             width: auto;
             margin: 0;
-            color: #bababa;
+            color: var(--primary);
             display: inline-block;
             position: relative;
 
             &:hover {
-                color: var(--primary);
+                color: var(--secondary);
             }
         }
 
@@ -1300,7 +1294,7 @@ html {
             align-items: center;
 
             &:hover {
-                color: var(--primary);
+                color: var(--secondary);
             }
 
             &:last-of-type {

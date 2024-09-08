@@ -7,7 +7,7 @@ tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. A
 eleventyNavigation:
   key: Home
   order: 100
-  hideOnDesktop: true
+
 ---
 
 {% extends "layouts/base.html" %}
@@ -54,9 +54,9 @@ eleventyNavigation:
 
     <!-- Background Image -->
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/hero-2.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/hero-2.jpg">
-        <img decoding="async" src="/assets/images/hero-2.jpg" alt="mechanic" width="2250" height="1500" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="/assets/images/banners/hero1-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/banners/hero1.webp">
+        <img decoding="async" src="/assets/images/banners/hero1.jpg" alt="woman getting massage" width="2250" height="1500" aria-hidden="true">
     </picture>
 </section>
                                 
@@ -200,9 +200,9 @@ eleventyNavigation:
         </div>
         <div class="cs-content">
             <span class="cs-topper">Why Choose Us</span>
-            <h2 class="cs-title">We Care About <span class="cs-color">Your Health</span> And Wellness</h2>
+            <h2 class="cs-title">Why Choose True Thai Therapy?</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, pariatur:
+                Experience authentic Thai wellness in Edinburgh with True Thai Therapy. Our skilled therapists blend centuries-old techniques with modern practices, offering personalized care in a tranquil, sensory-rich environment.
             </p>
             <ul class="cs-ul">
                 <li class="cs-li">
@@ -239,20 +239,18 @@ eleventyNavigation:
 </section>
 
 <!-- ============================================ -->
-<!--             Side By Side Reverse             -->
+<!--                 Side By Side                 -->
 <!-- ============================================ -->
 
-<section id="sbs-r-868">
+<section id="sbs-867">
     <div class="cs-container">
-        <div class="cs-image-group">
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/side/deep-tissue-m.webp">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/side/deep-tissue.webp">
-                <img loading="lazy" decoding="async" src="/assets/images/side/deeep-tissue.jpg" alt="deep tissue massage" width="630" height="775">
-            </picture>
-        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/side/deep-tissue-m.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/side/deep-tissue.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/side/deep-tissue.jpg" alt="deep tissue massage" width="630" height="775">
+        </picture>
         <div class="cs-content">
             <span class="cs-topper">Featured</span>
             <h2 class="cs-title">Deep Tissue Oil Massage</h2>
@@ -266,7 +264,6 @@ eleventyNavigation:
         </div>
     </div>
 </section>
-
 
 <!-- ============================================ -->
 <!--                     FAQ                      -->

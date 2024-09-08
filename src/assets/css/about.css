@@ -54,7 +54,7 @@
   }
   #sbs-867 h3 {
     font-size: 1.5rem;
-    color: var(--primary);
+    color: var(--secondary);
   }
   #sbs-867 h4,
   #sbs-867 h5,
@@ -174,7 +174,7 @@
   body.dark-mode #sbs-867 h1,
   body.dark-mode #sbs-867 h3,
   body.dark-mode #sbs-867 a {
-    color: var(--primaryLight);
+    color: var(--secondary);
   }
   body.dark-mode #sbs-867 p,
   body.dark-mode #sbs-867 li {
